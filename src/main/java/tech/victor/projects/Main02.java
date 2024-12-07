@@ -29,5 +29,9 @@ public class Main02 {
         department.setName("TI");
         departmentDAO.update(department);
         System.out.println("Update completed!");
+
+        System.out.println("\n==== TEST 5: department delete ====");
+        departmentDAO.deleteById(5);
+        System.out.println("Delete completed!");
     }
 }
