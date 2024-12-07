@@ -19,5 +19,10 @@ public class Main02 {
         for (Department department1 : departments) {
             System.out.println(department1);
         }
+
+        System.out.println("\n==== TEST 3: department findById ====");
+        Department department2 = departmentDAO.findById(3);
+        System.out.println(department2);
+
     }
 }
