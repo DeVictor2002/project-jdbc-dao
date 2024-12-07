@@ -24,5 +24,10 @@ public class Main02 {
         Department department2 = departmentDAO.findById(3);
         System.out.println(department2);
 
+        System.out.println("\n==== TEST 4: department update ====");
+        department = departmentDAO.findById(3);
+        department.setName("TI");
+        departmentDAO.update(department);
+        System.out.println("Update completed!");
     }
 }
